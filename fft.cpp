@@ -75,7 +75,7 @@ int main(){
 	//0,1,..,N-1をfft,ifftして元に戻るか試してみる
 	int N = 65536;
 	vector<complex<double> > src(N);
-	system_clock::time_point  start, end; // 型は auto で可
+	system_clock::time_point  start, end;
 	for(int i=0;i<N;i++){src[i] = i;}
 	start = system_clock::now();
 	src = fft(src);
